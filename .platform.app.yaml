@@ -4,10 +4,10 @@
 # See https://docs.platform.sh/configuration/app.html
 
 # The name of this app. Must be unique within a project.
-name: 'app'
+name: 'drupal'
 
 # The runtime the application uses.
-type: 'php:7.4'
+type: 'php:8.0'
 
 dependencies:
     php:
@@ -17,9 +17,10 @@ runtime:
     # Enable the redis extension so Drupal can communicate with the Redis cache.
     extensions:
         - redis
-variables:
-    php:
-        memory_limit: 256M
+        - sodium
+        - apcu
+        - blackfire
+
 # The relationships of the application with services or other applications.
 #
 # The left-hand side is the name of the relationship as it will be exposed
@@ -30,7 +31,7 @@ relationships:
     redis: 'cache:redis'
 
 # The size of the persistent disk of the application (in MB).
-disk: 10000
+disk: 2048
 
 # The 'mounts' describe writable, persistent filesystem mounts in the application.
 mounts:
@@ -65,7 +66,6 @@ mounts:
 
 # Configuration of the build of this application.
 build:
-    # Automatically run `composer install` on every build.
     flavor: composer
 
 # The hooks executed at various points in the lifecycle of the application.
@@ -73,7 +73,7 @@ hooks:
     # The build hook runs after Composer to finish preparing up your code.
     # No services are available but the disk is writeable.
     build: |
-        set -e
+                set -e
     # The deploy hook runs after your application has been deployed and started.
     # Code cannot be modified at this point but the database is available.
     # The site is not accepting requests while this script runs so keep it
@@ -81,10 +81,12 @@ hooks:
     deploy: |
         set -e
         php ./drush/platformsh_generate_drush_yml.php
-        cd web
-        drush -y cache-rebuild
-        drush -y updatedb
-        drush -y config-import
+        # if drupal is installed, will call the following drush commands:
+        #   - `cache-rebuild`
+        #   - `updatedb`
+        #   - and if config files are present, `config-import`
+        ./drush/platformsh_deploy_drupal.sh
+
 # The configuration of app when it is exposed to the web.
 web:
     locations:
@@ -146,3 +148,9 @@ crons:
     drupal:
         spec: '*/19 * * * *'
         cmd: 'cd web ; drush core-cron'
+
+source:
+  operations:
+    auto-update:
+      command: |
+                curl -fsS https://raw.githubusercontent.com/platformsh/source-operations/main/setup.sh | { bash /dev/fd/3 sop-autoupdate; } 3<&0
