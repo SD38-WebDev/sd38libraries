@@ -159,4 +159,4 @@ foreach ($platformsh->variables() as $name => $value) {
       }
       break;
   }
-} 
+}
