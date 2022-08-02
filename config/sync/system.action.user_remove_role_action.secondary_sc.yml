@@ -1,0 +1,14 @@
+uuid: 0f3ae1d7-bd85-4378-9f5d-5c997690c727
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.secondary_sc
+  module:
+    - user
+id: user_remove_role_action.secondary_sc
+label: 'Remove the Secondary Student role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: secondary_sc

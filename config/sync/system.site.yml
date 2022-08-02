@@ -1,0 +1,15 @@
+_core:
+  default_config_hash: yTxtFqBHnEWxQswuWvkjE8mKw2t8oKuCL1q8KnfHuGE
+langcode: en
+uuid: e36b4d91-15bd-4e41-9906-c80742b00256
+name: 'SD38 Library Learning Commons Digital Resources'
+mail: techhelpdesk@sd38.bc.ca
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /user/login
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: en
+mail_notification: ''

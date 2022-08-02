@@ -1,0 +1,14 @@
+uuid: 506558b1-e703-4c29-a9c2-0435cc441eca
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.elementary_student
+  module:
+    - user
+id: user_add_role_action.elementary_student
+label: 'Add the Elementary Student role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: elementary_student

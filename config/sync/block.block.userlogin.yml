@@ -1,0 +1,20 @@
+uuid: e1b4326a-65aa-4997-b156-e4b5aaeda385
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+  theme:
+    - bartik_sd38
+id: userlogin
+theme: bartik_sd38
+region: content
+weight: 1
+provider: null
+plugin: user_login_block
+settings:
+  id: user_login_block
+  label: 'User login'
+  label_display: visible
+  provider: user
+visibility: {  }

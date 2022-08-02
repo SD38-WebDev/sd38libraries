@@ -1,0 +1,14 @@
+uuid: b6435861-86b5-47e2-bf0b-ce8fe3f8ec95
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.fi_secondary_user
+  module:
+    - user
+id: user_add_role_action.fi_secondary_user
+label: 'Add the FI Secondary User role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: fi_secondary_user

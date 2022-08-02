@@ -1,0 +1,14 @@
+uuid: 07858bea-2076-4b44-ade4-be339a567d99
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.elementary_student
+  module:
+    - user
+id: user_remove_role_action.elementary_student
+label: 'Remove the Elementary Student role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: elementary_student

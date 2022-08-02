@@ -1,0 +1,23 @@
+uuid: f2bdfc52-2e39-421b-b2df-72c72b9ad4d1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_resource_url
+    - node.type.resource_links
+  module:
+    - link
+id: node.resource_links.field_resource_url
+field_name: field_resource_url
+entity_type: node
+bundle: resource_links
+label: 'Resource URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 0
+  link_type: 17
+field_type: link

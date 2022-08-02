@@ -1,0 +1,9 @@
+uuid: c01eb351-4da8-4945-a92c-299cbd20dbd5
+langcode: en
+status: true
+dependencies: {  }
+id: fi_secondary_user
+label: 'FI Secondary User'
+weight: -5
+is_admin: null
+permissions: {  }

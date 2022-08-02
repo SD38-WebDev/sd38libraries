@@ -1,0 +1,14 @@
+uuid: 842dba84-efe4-4e50-84ce-f7d8b32388c3
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.fi_secondary_user
+  module:
+    - user
+id: user_remove_role_action.fi_secondary_user
+label: 'Remove the FI Secondary User role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: fi_secondary_user

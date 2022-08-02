@@ -1,0 +1,38 @@
+uuid: f2317800-9a2a-4eec-bdbb-cf2ab9bde16e
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.resources_selection_tiles
+  module:
+    - system
+    - user
+    - views
+  theme:
+    - bartik_sd38
+id: views_block__resources_selection_tiles_block_3
+theme: bartik_sd38
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:resources_selection_tiles-block_3'
+settings:
+  id: 'views_block:resources_selection_tiles-block_3'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      elementary_student: elementary_student
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "<front>\r\n/user\r\n/user/*"

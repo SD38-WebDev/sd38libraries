@@ -1,0 +1,25 @@
+uuid: 9070bbb7-0bcc-41ce-8a66-bfebc40d1464
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.taxonomy_description
+  module:
+    - views
+  theme:
+    - bartik_sd38
+id: views_block__taxonomy_description_block_1
+theme: bartik_sd38
+region: content
+weight: -6
+provider: null
+plugin: 'views_block:taxonomy_description-block_1'
+settings:
+  id: 'views_block:taxonomy_description-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: none
+visibility: {  }

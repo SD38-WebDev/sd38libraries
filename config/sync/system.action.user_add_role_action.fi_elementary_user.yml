@@ -1,0 +1,14 @@
+uuid: c5fb189a-9529-4208-9122-97d09490ebc4
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.fi_elementary_user
+  module:
+    - user
+id: user_add_role_action.fi_elementary_user
+label: 'Add the FI Elementary User role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: fi_elementary_user

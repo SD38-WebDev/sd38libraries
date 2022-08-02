@@ -1,0 +1,29 @@
+uuid: 48782e99-1f1c-4380-8633-3d8db5d5475d
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - bartik_sd38
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: bartik_sd38_local_tasks
+theme: bartik_sd38
+region: content
+weight: -9
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    context_mapping: {  }
+    pages: "<front>\r\n/user/*"

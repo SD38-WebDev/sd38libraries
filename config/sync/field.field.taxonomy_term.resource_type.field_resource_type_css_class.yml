@@ -1,0 +1,19 @@
+uuid: e20247c3-3c57-438b-8749-487b46c460b9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_resource_type_css_class
+    - taxonomy.vocabulary.resource_type
+id: taxonomy_term.resource_type.field_resource_type_css_class
+field_name: field_resource_type_css_class
+entity_type: taxonomy_term
+bundle: resource_type
+label: 'CSS Class'
+description: 'For admin use only. Assigns custom style classes for resource type tiles.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

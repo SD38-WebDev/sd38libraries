@@ -1,0 +1,52 @@
+uuid: 8f444c25-9b6d-4aea-9252-4fe602011111
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.page
+    - node.type.resource_links
+    - taxonomy.vocabulary.resource_categories
+  module:
+    - node
+    - nodeaccess
+    - system
+    - taxonomy
+    - toolbar
+    - userprotect
+id: content_administrator
+label: 'Content Administrator'
+weight: -4
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'access content overview'
+  - 'access taxonomy overview'
+  - 'access toolbar'
+  - 'access user profiles'
+  - 'administer account settings'
+  - 'administer nodes'
+  - 'administer taxonomy'
+  - 'administer users'
+  - 'create page content'
+  - 'create resource_links content'
+  - 'create terms in resource_categories'
+  - 'delete any page content'
+  - 'delete any resource_links content'
+  - 'delete own page content'
+  - 'delete own resource_links content'
+  - 'delete page revisions'
+  - 'delete resource_links revisions'
+  - 'delete terms in resource_categories'
+  - 'edit any page content'
+  - 'edit any resource_links content'
+  - 'edit own page content'
+  - 'edit own resource_links content'
+  - 'edit terms in resource_categories'
+  - 'grant node permissions'
+  - 'revert page revisions'
+  - 'revert resource_links revisions'
+  - userprotect.bypass_all
+  - 'view own unpublished content'
+  - 'view page revisions'
+  - 'view resource_links revisions'
+  - 'view the administration theme'

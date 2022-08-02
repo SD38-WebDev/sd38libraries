@@ -1,0 +1,52 @@
+uuid: 72c4e746-1552-407c-bc90-598b79347ed8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.resource_type.field_feature_image
+    - field.field.taxonomy_term.resource_type.field_resource_type_css_class
+    - field.field.taxonomy_term.resource_type.field_role_reference
+    - taxonomy.vocabulary.resource_type
+  module:
+    - image
+    - text
+id: taxonomy_term.resource_type.default
+targetEntityType: taxonomy_term
+bundle: resource_type
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_feature_image:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_resource_type_css_class:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_role_reference:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden: {  }

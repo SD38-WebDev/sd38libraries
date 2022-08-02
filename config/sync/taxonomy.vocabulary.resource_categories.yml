@@ -1,0 +1,8 @@
+uuid: e0181afa-dfac-4a1d-91c6-c150c2049542
+langcode: en
+status: true
+dependencies: {  }
+name: 'Resource Categories'
+vid: resource_categories
+description: ''
+weight: 0

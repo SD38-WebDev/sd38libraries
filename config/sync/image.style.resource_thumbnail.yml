@@ -1,0 +1,43 @@
+uuid: db8b53b7-b8b0-4191-bff8-5ded480a45a8
+langcode: en
+status: true
+dependencies:
+  module:
+    - image_effects
+name: resource_thumbnail
+label: 'Resource Thumbnail'
+effects:
+  9561588f-b66b-471e-9351-0c661e030684:
+    uuid: 9561588f-b66b-471e-9351-0c661e030684
+    id: image_scale
+    weight: 1
+    data:
+      width: 400
+      height: null
+      upscale: true
+  a14cfdea-6716-4881-b109-8aef63952569:
+    uuid: a14cfdea-6716-4881-b109-8aef63952569
+    id: image_scale
+    weight: 2
+    data:
+      width: null
+      height: 400
+      upscale: false
+  06f26c6a-a848-4833-b253-b51bc376d064:
+    uuid: 06f26c6a-a848-4833-b253-b51bc376d064
+    id: image_effects_set_canvas
+    weight: 3
+    data:
+      canvas_size: exact
+      canvas_color: '#FFFFFFFF'
+      exact:
+        width: '400'
+        height: '400'
+        placement: center-center
+        x_offset: 0
+        y_offset: 0
+      relative:
+        left: 0
+        right: 0
+        top: 0
+        bottom: 0

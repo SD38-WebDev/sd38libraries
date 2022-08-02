@@ -1,0 +1,9 @@
+uuid: fdf4d74e-d220-4788-ba0e-f5a93f8422bd
+langcode: en
+status: true
+dependencies: {  }
+id: secondary_sc
+label: 'Secondary User'
+weight: -6
+is_admin: null
+permissions: {  }

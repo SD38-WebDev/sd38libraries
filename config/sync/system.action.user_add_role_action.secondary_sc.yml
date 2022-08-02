@@ -1,0 +1,14 @@
+uuid: f4fc4d39-29e2-4817-b387-40ca08fadb72
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.secondary_sc
+  module:
+    - user
+id: user_add_role_action.secondary_sc
+label: 'Add the Secondary Student role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: secondary_sc

@@ -1,0 +1,18 @@
+uuid: 02f2f8e4-85ea-46ca-a6bf-949d4927b8df
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.restricted_html
+  module:
+    - contact
+    - filter
+_core:
+  default_config_hash: pq_mEIu_B4widZN7Ap81iCJSjShFFdcL0jEiCi8VrDk
+id: anonymous
+label: 'Anonymous user'
+weight: -10
+is_admin: false
+permissions:
+  - 'access site-wide contact form'
+  - 'use text format restricted_html'

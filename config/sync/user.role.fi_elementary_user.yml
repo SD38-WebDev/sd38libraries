@@ -1,0 +1,9 @@
+uuid: 614fc785-00b7-4f6c-a173-8e42ca3a3391
+langcode: en
+status: true
+dependencies: {  }
+id: fi_elementary_user
+label: 'FI Elementary User'
+weight: -7
+is_admin: null
+permissions: {  }

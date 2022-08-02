@@ -1,0 +1,23 @@
+uuid: d9054b04-5b9c-4edd-ab4a-540fe78cf2d1
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+    - taxonomy
+id: resource_terms
+label: 'Resource Terms'
+type: 'canonical_entities:taxonomy_term'
+pattern: '[term:name]'
+selection_criteria:
+  4949b0fa-ce01-48c3-a332-03b52129c387:
+    id: 'entity_bundle:taxonomy_term'
+    negate: false
+    uuid: 4949b0fa-ce01-48c3-a332-03b52129c387
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    bundles:
+      resource_type: resource_type
+selection_logic: and
+weight: -5
+relationships: {  }

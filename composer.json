@@ -19,6 +19,9 @@
         "drupal/admin_toolbar": "^3.1",
         "drupal/backup_migrate": "^5.0",
         "drupal/bootstrap_library": "^2.0",
+        "drupal/core-composer-scaffold": "^9.4",
+        "drupal/core-project-message": "^9.4",
+        "drupal/core-recommended": "^9.4",
         "drupal/file_mdm": "^2.1",
         "drupal/flood_control": "^2.2",
         "drupal/image_effects": "^3.1",
@@ -30,9 +33,7 @@
         "drupal/upgrade_status": "^3.14",
         "drupal/userprotect": "^1.1",
         "drupal/views_bootstrap": "^5.3",
-        "drupal/core-composer-scaffold": "^9.4",
-        "drupal/core-project-message": "^9.4",
-        "drupal/core-recommended": "^9.4"
+        "drush/drush": "^11.1"
     },
     "conflict": {
         "drupal/drupal": "*"

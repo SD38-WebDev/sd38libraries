@@ -1,0 +1,14 @@
+uuid: ec1e1c2a-470a-4cd4-a016-21c042d91665
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.fi_elementary_user
+  module:
+    - user
+id: user_remove_role_action.fi_elementary_user
+label: 'Remove the FI Elementary User role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: fi_elementary_user

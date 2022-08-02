@@ -1,0 +1,9 @@
+uuid: 6ef878ef-233e-4baf-ad11-d6faecde0f69
+langcode: en
+status: true
+dependencies: {  }
+id: elementary_student
+label: 'Elementary User'
+weight: -8
+is_admin: null
+permissions: {  }
