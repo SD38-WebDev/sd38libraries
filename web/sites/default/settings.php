@@ -1,15 +1,15 @@
 <?php
 /**
  * @file
- * Platform.sh example settings.php file for Drupal 8.
+ * Platform.sh example settings.php file for Drupal 9.
  */
 
-// Default Drupal 8 settings.
+// Default Drupal settings.
 //
 // These are already explained with detailed comments in Drupal's
 // default.settings.php file.
 //
-// See https://api.drupal.org/api/drupal/sites!default!default.settings.php/8
+// See https://api.drupal.org/api/drupal/sites!default!default.settings.php/9
 $databases = [];
 $config_directories = [];
 $settings['update_free_access'] = FALSE;
@@ -31,7 +31,6 @@ $settings['file_scan_ignore_directories'] = [
 //
 // This is defined inside the read-only "config" directory, deployed via Git.
 $settings['config_sync_directory'] = '../config/sync';
-
 
 // Automatic Platform.sh settings.
 if (file_exists($app_root . '/' . $site_path . '/settings.platformsh.php')) {
