@@ -33,7 +33,7 @@
         "drupal/upgrade_status": "^3.14",
         "drupal/userprotect": "^1.1",
         "drupal/views_bootstrap": "^5.3",
-        "drush/drush": "^11.1",
+        "drush/drush": "^10.5",
         "platformsh/config-reader": "^2.4"
     },
     "conflict": {
