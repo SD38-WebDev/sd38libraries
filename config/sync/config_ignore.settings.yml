@@ -1,5 +1,6 @@
 _core:
   default_config_hash: UVH1aJ4b44UM-VdPVN7hNNuuVqfReJxwfVeDQH1Hvsk
 ignored_config_entities:
+  - bartik.settings
   - bartik_sd38.settings
-  - color.theme.bartik_sd38
+  - color.theme.bartik
