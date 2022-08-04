@@ -4,3 +4,4 @@ ignored_config_entities:
   - bartik.settings
   - bartik_sd38.settings
   - color.theme.bartik
+  - color.theme.bartik_sd38
