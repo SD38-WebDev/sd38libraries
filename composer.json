@@ -25,6 +25,7 @@
         "drupal/core-recommended": "^9.4",
         "drupal/file_mdm": "^2.1",
         "drupal/flood_control": "^2.2",
+        "drupal/google_analytics": "^4.0",
         "drupal/image_effects": "^3.1",
         "drupal/imagemagick": "^3.2",
         "drupal/nodeaccess": "^1.1",
